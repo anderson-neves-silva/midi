@@ -8,7 +8,7 @@
 
 body {
   align-items: center;
-  background: linear-gradient(45deg, #c6e0eb 0%,#033369 100%);
+  background: linear-gradient(45deg, #fcf809 0%,#0a7afa 100%);
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -23,8 +23,8 @@ h1 {
 }
 
 .teclado {
-  background: linear-gradient(to bottom, #e68989 0%,#cccccc 100%);
-  box-shadow: 6px 8px 0 6px #666, 10px 10px 10px #000;
+  background: linear-gradient(to bottom, #ccf70d 0%,#3f3dcc 100%);
+  box-shadow: 6px 8px 0 6px rgb(112, 96, 96), 10px 10px 10px rgb(241, 239, 239);
   border-radius: 30px;
   display: grid;
   gap: 10px;
@@ -44,6 +44,13 @@ h1 {
   line-height: 120px;
   text-align: center;
   width: 120px;
+}
+
+/*aumenta os elementos em 10%*/
+.tecla:hover {
+  background: var(--cinza);
+  color: var(--branca);
+  transform: scale(1.1);
 }
 
 .tecla.ativa,
