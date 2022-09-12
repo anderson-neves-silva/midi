@@ -72,3 +72,16 @@ h1 {
 .tecla:active:focus {
   box-shadow: 3px 3px 0 var(--vermelha-escura) inset, 1px 1px 10px var(--luz);
 }
+
+@media screen and (max-width: 470px) {
+  .teclado, .tecla {
+    max-width: 90%;
+  }
+
+  .tecla {
+    width: 100px;
+    height: 100px;
+    font-size: 1.5em;   
+  }
+
+}
