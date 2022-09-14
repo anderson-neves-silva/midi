@@ -13,9 +13,16 @@ for (let contador = 0; contador < listaDeTeclas.length; contador++) { //para
         tocaSom(idAudio);
     }
 
+    tecla.onkeydown = function (evento) { //evento que adiciona uma classe 'ativa' via teclado        
+        if (evento.code === 'Enter' || evento.code === 'Space') {
+            tecla.classList.add('ativa');
+        }        
+    } 
+
+    tecla.onkeyup = function (evento) { //evento ao soltar a tecla remove a classe 'ativa'    
+        tecla.classList.remove('ativa');
+    }        
 }
-
-
 
 /*
 como acessando os elementos do html diretamente quando não temos classes
